@@ -1,0 +1,17 @@
+def calc_average_temperature(temp_list):
+    total = sum(temp_list)
+    average = total / len(temp_list)
+    return average
+
+
+def calc_min_max_temperature(temp_list):
+    min_temp = min(temp_list)
+    max_temp = max(temp_list)
+    return [min_temp, max_temp]
+
+
+temps = input("Enter numbers separated by comma: ")
+temp_list = [float(x.strip()) for x in temps.split(",")]
+
+print("Average:", calc_average_temperature(temp_list))
+print("Min & Max:", calc_min_max_temperature(temp_list))
