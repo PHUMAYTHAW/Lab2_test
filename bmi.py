@@ -12,4 +12,4 @@ def calculate_bmi(height,weight):
     else:
         print("Normal Weight")
         return 0
-calculate_bmi(weight=65,height=1.55)
+calculate_bmi(weight=65,height=1.53)
